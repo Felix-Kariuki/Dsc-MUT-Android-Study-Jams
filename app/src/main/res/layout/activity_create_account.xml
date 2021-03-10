@@ -86,20 +86,21 @@
                 android:layout_marginTop="20dp"
                 android:hint="@string/email"
                 android:autofillHints=""/>
+
             <EditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:textSize="16sp"
-                android:background="@drawable/input_bg"
-                android:inputType="textPassword"
+                android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="50dp"
-                android:layout_marginStart="50dp"
+                android:autofillHints=""
+                android:background="@drawable/input_bg"
                 android:drawableStart="@drawable/ic_password"
-                android:padding="10dp"
                 android:hint="@string/password"
-                android:autofillHints=""/>
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="16sp" />
 
             <EditText
                 android:id="@+id/etConfirmPassword"

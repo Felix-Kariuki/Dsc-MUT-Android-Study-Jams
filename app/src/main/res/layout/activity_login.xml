@@ -97,7 +97,7 @@
             android:text="@string/login_with_facebook"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:drawableStart="@drawable/facebook"
+            android:drawableLeft="@drawable/facebook"
             app:backgroundTint="@color/colorBlue" />
         </LinearLayout>
 
