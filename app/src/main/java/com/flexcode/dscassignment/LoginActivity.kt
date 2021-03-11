@@ -3,6 +3,7 @@ package com.flexcode.dscassignment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.view.View
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -24,6 +25,18 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             onBackPressed()
         }
+        btnLogin.setOnClickListener( View.OnClickListener {
+            checkEmail()
+        })
 
+    }
+
+    private fun checkEmail() {
+        val email = etEmail.text.toString().trim()
+        if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches() ){
+            return
+        }else {
+            etEmail.error = "Invalid Email"
+        }
     }
 }
