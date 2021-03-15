@@ -21,4 +21,11 @@
     <string name="forgot_password_caps">FORGOT PASSWORD</string>
     <string name="submit">Submit</string>
     <string name="reset_password">Reset Password</string>
+    <string name="change_password_statement">Enter Your Email address associated with your account we will send you a link to reset your password</string>
+    <string name="error">Please enter your name!</string>
+    <string name="email_1">Email cannot be blank!</string>
+    <string name="invalid">Invalid Email</string>
+    <string name="pass">Please enter your password</string>
+    <string name="pass2">Please Confirm Your Password</string>
+    <string name="pass3">Please check your password</string>
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958638423537",
+    "project_id": "dsc-assignment",
+    "storage_bucket": "dsc-assignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958638423537:android:2906092351f9799f93d850",
+        "android_client_info": {
+          "package_name": "com.flexcode.dscassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958638423537-djhucviirgq23lubnd6da0mnnlkcrt2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApgUoaYYFEwgq3I_PWYfcRVf-GqU83-EE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958638423537-djhucviirgq23lubnd6da0mnnlkcrt2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

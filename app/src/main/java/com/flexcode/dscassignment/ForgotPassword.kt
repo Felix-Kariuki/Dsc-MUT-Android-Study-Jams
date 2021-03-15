@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
+import kotlinx.android.synthetic.main.activity_create_account.*
 import kotlinx.android.synthetic.main.activity_forgot_password.*
 import kotlinx.android.synthetic.main.activity_forgot_password.etEmail
 import kotlinx.android.synthetic.main.activity_login.*
@@ -13,13 +14,14 @@ class ForgotPassword : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
+
+
         //Intent to login page back btn
-        ivBack.setOnClickListener {
-            val intent = Intent(this@ForgotPassword, LoginActivity::class.java)
-            startActivity(intent)
-            onBackPressed()
-        }
-        
+       ivBack_Details.setOnClickListener {
+           val intent = Intent(this@ForgotPassword, LoginActivity::class.java)
+           startActivity(intent)
+           onBackPressed()
+       }
         btnSubmit.setOnClickListener {
             checkEmail()
         }
@@ -30,7 +32,7 @@ class ForgotPassword : AppCompatActivity() {
         if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches() ){
             return
         }else {
-            etEmail.error = "Invalid Email"
+            etEmail.error = getString(R.string.invalid)
         }
     }
 }

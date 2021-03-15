@@ -25,9 +25,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
             onBackPressed()
         }
-        btnLogin.setOnClickListener( View.OnClickListener {
-            checkEmail()
-        })
+
+        //login on click listener
+        btnLogin.setOnClickListener { checkEmail() }
 
     }
 
@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
         if (email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches() ){
             return
         }else {
-            etEmail.error = "Invalid Email"
+            etEmail.error = getString(R.string.invalid)
         }
     }
 }

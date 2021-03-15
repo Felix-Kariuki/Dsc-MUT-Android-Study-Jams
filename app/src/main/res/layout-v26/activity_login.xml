@@ -66,8 +66,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="15dp"
-            android:padding="2dp"
-            tools:targetApi="o" />
+            android:padding="2dp"/>
 
         <Button
             android:id="@+id/btnLogin"
@@ -99,7 +98,7 @@
             android:text="@string/login_with_facebook"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:drawableStart="@drawable/facebook"
+            android:drawableLeft="@drawable/facebook"
             app:backgroundTint="@color/colorBlue" />
         </LinearLayout>
 
@@ -129,8 +128,7 @@
             android:autoSizeTextType="uniform"
             android:textColor="@color/colorBlue"
             android:textSize="15sp"
-            android:textStyle="bold"
-            tools:targetApi="o" />
+            android:textStyle="bold" />
     </LinearLayout>
 
 
